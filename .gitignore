@@ -1,0 +1,16 @@
+# Ignore the below macOS specific files if any present
+.DS_Store
+
+# Ignore any editor specific files
+*.swp
+*.swo
+
+# Any outputs from shell script(s) can be ignored unless required
+*.log
+*.out
+*.tmp
+*.bak
+*~
+
+# Ignore test script files
+parse.sh
