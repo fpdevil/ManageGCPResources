@@ -1,6 +1,6 @@
 # Create GCP resources
 
->[!NOTE] WIP
+> [!NOTE] WIP
 > This is still a WIP and new updates will be added
 > The current scripts will run
 
