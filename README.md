@@ -29,7 +29,10 @@ The configuration file has below structure:
 ```sh
 # Provide a meaningful name for ENV which will be prepended for all resources
 ENV="poc"
+# VPC ID has a suffix vpc00; This name can be adjusted as needed
 VPC_ID="${ENV}-vpc00"
+
+# Similar to VPC ID, adjust the names as needed
 SUBNET01_ID="${VPC_ID}-subnet01"
 SUBNET02_ID="${VPC_ID}-subnet02"
 
@@ -40,17 +43,20 @@ SUBNET02_CIDR="10.10.2.0/24"
 # Source is currently open which may be adjusted as needed
 SOURCE_CIDR="0.0.0.0/0"
 
-# Regions for resource creation
+# Regions for resource creation; Can be set as per requirement
 REGION01="us-east4"
 REGION02="us-west4"
 ZONE01="${REGION01}-c"
 ZONE02="${REGION02}-c"
+
+# Create 2 vm instances with ENV name as suffix
+# Adjust these as needed
 VM01="terraform-${ENV}"
 VM02="docker-${ENV}"
 
-# GCP VM Machine type
+# GCP VM Machine type; Adjust as needed
 MACHINE_TYPE="e2-medium"
 
-# GCP Linux Image name
+# GCP Linux Image name; Adjust as needed
 IMAGE_ID="projects/ubuntu-os-cloud/global/images/ubuntu-minimal-2504-plucky-amd64-v20250430"
 ```
