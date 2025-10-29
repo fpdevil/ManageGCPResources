@@ -1,6 +1,6 @@
 # Create GCP resources
 
-> [!NOTE] WIP
+> [!NOTE]  
 > This is still a WIP and new updates will be added
 > The current scripts will run
 
@@ -54,7 +54,3 @@ MACHINE_TYPE="e2-medium"
 # GCP Linux Image name
 IMAGE_ID="projects/ubuntu-os-cloud/global/images/ubuntu-minimal-2504-plucky-amd64-v20250430"
 ```
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
